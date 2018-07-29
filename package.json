@@ -1,0 +1,38 @@
+{
+  "name": "ez-s",
+  "version": "0.0.0",
+  "description": "Zero-config HTTPS static file serving and directory listing",
+  "files": [
+    "bin"
+  ],
+  "repository": "alshakero/ez-s",
+  "bin": {
+    "ez-s": "./bin/ez-s.js"
+  },
+  "scripts": {
+    "test": "ava --serial"
+  },
+  "keywords": [
+    "now",
+    "serve",
+    "ez-s",
+    "micro",
+    "http-server"
+  ],
+  "author": "alshaker",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/schemas": "1.7.0",
+    "ajv": "6.5.2",
+    "arg": "2.0.0",
+    "boxen": "1.3.0",
+    "chalk": "2.4.1",
+    "clipboardy": "1.2.3",
+    "serve-handler": "3.6.0",
+    "update-check": "1.5.2"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "request": "^2.87.0"
+  }
+}
