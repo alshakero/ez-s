@@ -2,6 +2,8 @@
 
 EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the ability to locally run a green-badge HTTPS server with zero configuration! No certificate creation, no tunnels, no hassle. Just run `ez-s` and access `https://ez-s.io` to see your folder served with a lovely green badge 🤯. Test your Service Workers, secure cookies etc.. [_(but how?)_](#how-this-works).
 
+[![Build Status](https://travis-ci.org/alshakero/ez-s.svg?branch=master)](https://travis-ci.org/alshakero/ez-s)
+
 ## Usage
 
 Firstly, install the package using Yarn or NPM (you'll need at least [Node.js LTS](https://nodejs.org/en/)):
