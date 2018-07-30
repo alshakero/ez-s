@@ -21,7 +21,7 @@ test('Should work without any config', async t => {
       res(body);
     });
   });
-  t.is(body.includes('LICENSE') && body.includes('package-lock.json'), true); // `serve` list dir files
+  t.is(body.includes('click to toggle the view'), true); // this text comes from `serve` file list page
   process.kill();
 });
 
