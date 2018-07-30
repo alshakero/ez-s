@@ -1,5 +1,7 @@
 ![EZ-S Logo](https://user-images.githubusercontent.com/17054134/43371384-dc63dbbc-9390-11e8-9866-42a7e9410047.png)
 
+> Serving HTTP for development is fairly easy. Serving HTTPS is not. This tools gives your HTTP an easy S.
+
 EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the ability to locally run a green-badge HTTPS server with zero configuration! No certificate creation, no tunnels, no hassle. Just run `ez-s` and access `https://ez-s.io` to see your folder served with a lovely green badge 🤯. Test your Service Workers, secure cookies etc.. [_(but how?)_](#how-this-works).
 
 [![Build Status](https://travis-ci.org/alshakero/ez-s.svg?branch=master)](https://travis-ci.org/alshakero/ez-s)
@@ -52,7 +54,7 @@ Please see `serve`'s [configuration](https://github.com/zeit/serve#configuration
 ## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
-2. Uninstall `ez-s` if it's already installed: `npm uninstall -g ez-s`
+2. Uninstall `ez-s` if it's already installed: `npm uninstall -g @alshakero/ez-s`
 3. Link it to the global module directory: `npm link`
 
 After that, you can use the `ez-s` command everywhere.
