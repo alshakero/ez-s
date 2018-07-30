@@ -51,6 +51,10 @@ Due to this caveat, `serve`'s `--listen` argument is useless in this case. The o
 
 Please see `serve`'s [configuration](https://github.com/zeit/serve#configuration) section.
 
+## Supporting this tool
+
+If you like it, please give it a star ⭐
+
 ## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
