@@ -3,7 +3,6 @@ sudo: required
 dist: trusty
 before_script:
   - yarn
-  - 'export PATH=$PWD/node_modules/.bin:$PATH'
 node_js: 8
 script:
   - sudo yarn test

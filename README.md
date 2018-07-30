@@ -53,6 +53,10 @@ Please see `serve`'s [configuration](https://github.com/zeit/serve#configuration
 
 After that, you can use the `ez-s` command everywhere.
 
+## What if you don't want to use `serve` 
+
+You can download the certificates from `certs` folder and use them with any server you want. After you set your server up, access `https://ez-s.io` and it should work.
+
 ## Credits
 
 This project is almost identical to Zeit's. The best part of the credit goes to them. My idea was to offer HTTPS and found it wasteful to re-create the underlaying HTTP logic. Huge thanks to Zeit!
