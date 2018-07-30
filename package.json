@@ -1,6 +1,6 @@
 {
-  "name": "ez-s",
-  "version": "0.0.0",
+  "name": "@alshakero/ez-s",
+  "version": "0.0.1",
   "description": "Zero-config HTTPS static file serving and directory listing",
   "files": [
     "bin"

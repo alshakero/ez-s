@@ -30,9 +30,9 @@ const info = message => chalk`{magenta INFO:} ${message}`;
 const error = message => chalk`{red ERROR:} ${message}`;
 
 // Certificate
-const privateKey = fs.readFileSync('./certs/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('./certs/cert.pem', 'utf8');
-const ca = fs.readFileSync('./certs/fullchain.pem', 'utf8');
+const privateKey = fs.readFileSync(path.resolve(__dirname, '../certs/privkey.pem'), 'utf8');
+const certificate = fs.readFileSync(path.resolve(__dirname, '../certs/cert.pem'), 'utf8');
+const ca = fs.readFileSync(path.resolve(__dirname, '../certs/fullchain.pem'), 'utf8');
 
 const credentials = {
 	key: privateKey,

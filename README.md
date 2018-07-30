@@ -9,10 +9,12 @@ EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the
 Firstly, install the package using Yarn or NPM (you'll need at least [Node.js LTS](https://nodejs.org/en/)):
 
 ```bash
-yarn global add ez-s
+yarn global add @alshakero/ez-s
 # or
-npm install -g ez-s
+npm install -g @alshakero/ez-s
 ```
+
+_Sadly, there is another package called ezs. And NPM won't let me publish my package unscoped due to name similiarity._.
 
 Once that's done, you can run this command inside your project's directory:
 
