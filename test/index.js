@@ -4,9 +4,13 @@ const request = require('request');
 
 async function runEZS(args = []) {
   return new Promise(r => {
-    const process = spawn('node', ['./bin/ez-s.js', ...args]);
-    process.stdout.on('data', data => {
+    const EZSProcess = spawn('node', ['./bin/ez-s.js', ...args]);
+    EZSProcess.stdout.on('data', data => {
       r(process);
+    });
+    EZSProcess.stderr.on('data', data => {
+      console.error('Failed to start ez-s,', data);
+      process.exit(1);
     });
   });
 }
