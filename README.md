@@ -2,7 +2,7 @@
 
 > Serving HTTP for development is fairly easy. Serving HTTPS is not. This tools gives your HTTP an easy S.
 
-EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the ability to locally run a green-badge HTTPS server with zero configuration! No certificate creation, no tunnels, no hassle. Just run `ez-s` and access `https://ez-s.io` to see your folder served with a lovely green badge 🤯. Test your Service Workers, secure cookies etc.. [_(but how?)_](#how-this-works).
+EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the ability to locally run a green-badge HTTPS server with zero configuration! No certificate creation, no tunnels, no hassle. Just run `ez-s` and access `https://ez-s.io:8080` to see your folder served with a lovely green badge 🤯. Test your Service Workers, secure cookies etc.. [_(but how?)_](#how-this-works).
 
 [![Build Status](https://travis-ci.org/alshakero/ez-s.svg?branch=master)](https://travis-ci.org/alshakero/ez-s)
 

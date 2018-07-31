@@ -14,7 +14,7 @@ async function runEZS(args = []) {
 test('Should work without any config', async t => {
   const process = await runEZS();
   const body = await new Promise((res, reject) => {
-    request('https://ez-s.io', function(error, response, body) {
+    request('https://ez-s.io:8080', function(error, response, body) {
       if (error) {
         reject(error);
       }
@@ -29,7 +29,7 @@ test('Should accept a dir argument', async t => {
   const process = await runEZS(['./test/test-data']);
 
   const body = await new Promise((res, reject) => {
-    request('https://ez-s.io', function(error, response, body) {
+    request('https://ez-s.io:8080', function(error, response, body) {
       if (error) {
         reject(error);
       }
