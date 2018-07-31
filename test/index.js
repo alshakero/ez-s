@@ -9,7 +9,7 @@ async function runEZS(args = []) {
       r(process);
     });
     EZSProcess.stderr.on('data', data => {
-      console.error('Failed to start ez-s,', data);
+      console.error('Failed to start ez-s,', data.toString());
       process.exit(1);
     });
   });
