@@ -72,9 +72,9 @@ const getHelp = () => chalk`
 
       {bold $} {cyan ez-s} --help
       {bold $} {cyan ez-s} --version
-      {bold $} {cyan ez-s} [-p 8080] [{underline directory}]
+      {bold $} {cyan ez-s} [-p 5000] [{underline directory}]
 
-      By default, {cyan ez-s} will listen on {bold ez-s.io:443} and serve the
+      By default, {cyan ez-s} will listen on {bold ez-s.io:5000} and serve the
       current working directory on that address.
 
   {bold OPTIONS}
@@ -297,7 +297,7 @@ const loadConfig = async (cwd, entry, args) => {
 
 	if (!args['--port']) {
 		// Default endpoint
-		args['--port'] = process.env.PORT || 443;
+		args['--port'] = process.env.PORT || 5000;
 	}
 
 	if (args._.length > 1) {

@@ -2,7 +2,7 @@
 
 > Serving HTTP for development is fairly easy. Serving HTTPS is not. This tools gives your HTTP an easy S.
 
-EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the ability to locally run a green-badge HTTPS server with zero configuration! No certificate creation, no tunnels, no hassle. Just run `ez-s` and access `https://ez-s.io` to see your folder served with a lovely green badge 🤯. Test your Service Workers, secure cookies etc.. [_(but how?)_](#how-this-works).
+EZ-S is a fork of [zeit/serve](https://github.com/zeit/serve) that gives you the ability to locally run a green-badge HTTPS server with zero configuration! No certificate creation, no tunnels, no hassle. Just run `ez-s` and access `https://ez-s.io:5000` to see your folder served with a lovely green badge 🤯. Test your Service Workers, secure cookies etc.. [_(but how?)_](#how-this-works).
 
 [![Build Status](https://travis-ci.org/alshakero/ez-s.svg?branch=master)](https://travis-ci.org/alshakero/ez-s)
 
@@ -51,6 +51,10 @@ Due to this caveat, `serve`'s `--listen` argument is useless in this case. The o
 
 Please see `serve`'s [configuration](https://github.com/zeit/serve#configuration) section.
 
+## Supporting this tool
+
+If you like it, please give it a star ⭐
+
 ## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
@@ -62,6 +66,11 @@ After that, you can use the `ez-s` command everywhere.
 ## What if you don't want to use `serve` 
 
 You can download the certificates from `certs` folder and use them with any server you want. After you set your server up, access `https://ez-s.io` and it should work.
+
+### Upcoming features
+
+- Soon, there will be a `--tunnel` argument. This argument will **locally** tunnel your own HTTP server to an HTTPS endpoint. All on your machine in a single command. 
+- Your suggested feature. Please create an issue if you think if you have a feature request.
 
 ## Credits
 

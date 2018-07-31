@@ -4,17 +4,21 @@ const request = require('request');
 
 async function runEZS(args = []) {
   return new Promise(r => {
-    const process = spawn('node', ['./bin/ez-s.js', ...args]);
-    process.stdout.on('data', data => {
-      r(process);
+    const EZSProcess = spawn('node', ['./bin/ez-s.js', ...args]);
+    EZSProcess.stdout.on('data', data => {
+      r(EZSProcess);
+    });
+    EZSProcess.stderr.on('data', data => {
+      console.error('Failed to start ez-s,', data.toString());
+      EZSProcess.exit(1);
     });
   });
 }
 
 test('Should work without any config', async t => {
-  const process = await runEZS();
+  const EZSProcess = await runEZS();
   const body = await new Promise((res, reject) => {
-    request('https://ez-s.io', function(error, response, body) {
+    request('https://ez-s.io:5000', function(error, response, body) {
       if (error) {
         reject(error);
       }
@@ -22,14 +26,14 @@ test('Should work without any config', async t => {
     });
   });
   t.is(body.includes('click to toggle the view'), true); // this text comes from `serve` file list page
-  process.kill();
+  EZSProcess.kill();
 });
 
 test('Should accept a dir argument', async t => {
-  const process = await runEZS(['./test/test-data']);
+  const EZSProcess = await runEZS(['./test/test-data']);
 
   const body = await new Promise((res, reject) => {
-    request('https://ez-s.io', function(error, response, body) {
+    request('https://ez-s.io:5000', function(error, response, body) {
       if (error) {
         reject(error);
       }
@@ -37,11 +41,11 @@ test('Should accept a dir argument', async t => {
     });
   });
   t.is(body, 'Hello HTTPS world!');
-  process.kill();
+  EZSProcess.kill();
 });
 
 test('Should accept a port argument', async t => {
-  const process = await runEZS(['./test/test-data', '--port=5001']);
+  const EZSProcess = await runEZS(['./test/test-data', '--port=5001']);
 
   const body = await new Promise((res, reject) => {
     request('https://ez-s.io:5001', function(error, response, body) {
@@ -52,5 +56,5 @@ test('Should accept a port argument', async t => {
     });
   });
   t.is(body, 'Hello HTTPS world!');
-  process.kill();
+  EZSProcess.kill();
 });
