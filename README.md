@@ -24,12 +24,11 @@ Once that's done, you can run this command inside your project's directory:
 ez-s
 ```
 
-Finally, run this command to see a list of all available options:
+You may run this command to see a list of all available options:
 
 ```bash
 ez-s --help
 ```
-Now you understand how the package works! :tada:
 
 If you're fimiliar with `serve`, `ez-s` accepts exactly the same arguments except `-l, --listen`. It accepts `--port` instead. The reasoning is explained in How this works section below.
 
