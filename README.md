@@ -1,4 +1,4 @@
-⚠️ apparently, this goes against letsencrypt’s ToS and I can’t use their certificiates in such manner. And I have to drop this tool. I would have issued a non-free certificate to keep this tool up, but it doesn’t sound like a great idea to publish a private key that is officially registered to my name. 
+⚠️ Apparently, this goes against letsencrypt’s ToS and I can’t use their certificiates in such manner. And I have to drop this tool. I would have issued a non-free certificate to keep this tool up, but it doesn’t sound like a great idea to publish a private key that is officially registered to my name. 
 
 ![EZ-S Logo](https://user-images.githubusercontent.com/17054134/43371384-dc63dbbc-9390-11e8-9866-42a7e9410047.png)
 
